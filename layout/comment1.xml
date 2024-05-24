@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--해당 리사이클러뷰는 댓글창 가져올때 필요한 것이다ㅕㅕㅕ.-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_apply3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/comment_list"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+        />
+
+    <!--          tools:listitem="@layout/comment_list"
+     이 부분으로 리사이클러뷰에 들어갈 값 설정  -->
+</LinearLayout>

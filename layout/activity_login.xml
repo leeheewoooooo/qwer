@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAEC"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Top_padding"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="20dp">
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ps_bt"
+            android:ems="10"
+            android:hint="이메일을 작성해주세요"
+            android:inputType="text"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ps_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="30dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="30dp">
+
+        <EditText
+            android:id="@+id/ps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ps_bt"
+            android:ems="10"
+            android:hint="비밀번호를 작성해주세요"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/google_loyout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.widget.Button
+            android:id="@+id/google_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/google_bt"
+            android:paddingBottom="10dp"
+            android:text="GOOGLE_LOGIN"
+            android:textColor="#737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Bt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <android.widget.Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/small_bt"
+            android:paddingBottom="10dp"
+            android:text="LOGIN"
+            android:textColor="#737373" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bt_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_weight="1"
+                android:background="#F8FAEC"
+                android:outlineProvider="none"
+                android:text="비번힌트"
+                android:textColor="#737373" />
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/line" />
+
+            <android.widget.Button
+                android:id="@+id/join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_weight="1"
+                android:background="#F8FAEC"
+                android:text="회원가입"
+                android:outlineProvider="none"
+                android:textColor="#737373" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
